@@ -59,7 +59,7 @@ ul li{
   list-style-type: none;
 }
 
-.navitem {
+.navitems {
   padding-left: 2.2rem;
   list-style-type: none;
   float: right;
@@ -193,7 +193,7 @@ ul li{
 }
 
 .imgbox{
-    height: 100%
+    height: 100%;
 }
 
 .textbox{
@@ -488,4 +488,76 @@ ul li{
   /* width: 25%; */
   cursor: pointer;
   border: solid 1px #e63946;
+}
+
+/* ######################### adding media queries ########################*/
+
+@media (max-width: 500px){
+  html{
+    font-size: 8px;
+  }
+  .navitems, .logo{
+    float: none;
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    padding-left: 0%;
+    padding-top: 1rem;
+  }
+  .navitem{
+    display: inline;
+    padding-right: 1rem;
+  }
+
+  .showcase .imgbox,.showcase .textbox{
+    float: none;
+    width: 100%;
+    /* height: 25%; */
+    display: block;
+    text-align: center;
+  }
+  .row{
+    height: auto;
+  }
+
+  .features .box{
+    float: none;
+    display: block;
+    width: 100%;
+    word-spacing: 0.1rem;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.411);
+  }
+  .box2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .box-wrapper{
+    box-shadow: none;
+  }
+
+  .bannerleft, .bannerright{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .btn-banner{
+    width: 50%;
+  }
+  .bannerright a{
+    /* text-align: center; */
+    padding: 0%;
+  }
+  .bag1, .bag2{
+    padding-left: 0%;
+  }
+
+  .column1, .column2{
+    float: none;
+    width: 100%;
+  }
+  .column2{
+    margin-top: 5rem;
+  }
+  
 }
